@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f48fb1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -10,13 +11,14 @@ body {
     box-sizing: border-box;
 }
 .aplicacion{
+    display: flex;
+    flex-direction: column;
     background-color: white;
+    width: fit-content;
+    height: fit-content;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 1200px;
-    text-align: center;
 }
 h1{
     text-align: center;
@@ -24,7 +26,8 @@ h1{
 }
 .añadir-task{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 20px;
     color: #a08ff4;
 }
@@ -53,37 +56,20 @@ button:hover{
 }
 .task-column{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 .column{
-    width: 30%;
-}
-.column h2 {
-    margin-bottom: 10px;
+    height: 400px;
+    width: 200px;
 }
 .task-list{
     list-style: none;
     padding: 0;
-    min-height: 200px;
+    width: 100%;
     border-radius: 5px;
     padding: 10px;
     background-color: #be8ff4;
     margin-bottom: 20px;
-}
-li{
-    padding: 10px;
-    background-color: #8fbef4;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-}
-li button{
-    margin-left: 10px;
-    background-color: #de024b;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
 }

@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestor de tareas</title>
-    <link rel="stylesheet" href="LAB10.CSS">
+    <link rel="stylesheet" href="cuerpo.CSS">
 </head>
 <body>
     <div class="aplicacion">
-        <h1>Pendientes de la semana</h1>
         <div class="añadir-task">
             <input type="text" id="añadirtaskinput" placeholder="Nombra tus planes de la semana">
             <button id="añadirtaskbutton">Añadir tarea</button>
-         </div>
-         <div class="task-column">
+        </div>
+        <div class="task-column">
             <div class="column">
-                <h2>Pendientes</h2>
-                <ul id="Pendientestask" class="task-list"></ul>
+                <h2>Pendiente</h2>
+                <div id="Pendientestask" class="task-list"></ul>
             </div>
             <div class="column">
                 <h2>Progreso</h2>
-                <ul id="Progreso" class="task-list"></ul>
+                <div id="Progresotask" class="task-list"></ul>
             </div>
             <div class="column">
                 <h2>Completada</h2>
-                <ul id="Completatask" class="task-list"></ul>
+                <div id="Completatask" class="task-list"></ul>
             </div>
-         </div>
+        </div>
     </div>
-    <script src="LAB10.JS"></script>
+    <script src="comandos.JS"></script>
 </body>
 </html>
